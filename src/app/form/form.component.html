@@ -1,0 +1,159 @@
+<div class="container">
+    <!-- Student Information Form -->
+    <div class="student-form">
+        <div class="form-row">
+            <div class="form-group left-aligned">
+                <label>رقم هوية الطالب</label>
+                <input type="text" class="form-control" [(ngModel)]="studentData.studentId">
+            </div>
+            <div class="form-group right-aligned">
+                <label>الكليه</label>
+                <select class="form-control" [(ngModel)]="studentData.college">
+                    <option value="">-</option>
+                    <option *ngFor="let college of colleges" [value]="college.id">{{ college.name }}</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group left-aligned">
+                <label>الرقم الجامعي</label>
+                <input type="text" class="form-control" [(ngModel)]="studentData.university">
+            </div>
+            <div class="form-group right-aligned">
+                <label>اسم الطالب</label>
+                <input type="text" class="form-control" [(ngModel)]="studentData.studentName">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group left-aligned">
+                <label>التخصص</label>
+                <select class="form-control" [(ngModel)]="studentData.major">
+                    <option value="">-</option>
+                    <option *ngFor="let major of majors" [value]="major.id">{{ major.name }}</option>
+                </select>
+            </div>
+            <div class="form-group right-aligned">
+                <label>الجامعة</label>
+                <select class="form-control" [(ngModel)]="studentData.university">
+                    <option value="">-</option>
+                    <option *ngFor="let university of universities" [value]="university.id">{{ university.name }}
+                    </option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group left-aligned">
+                <label>معدل الثانوية العامة</label>
+                <input type="text" class="form-control" [(ngModel)]="studentData.highSchoolScore">
+            </div>
+            <div class="form-group right-aligned">
+                <label>المستوى الأكاديمي</label>
+                <input type="text" class="form-control" [(ngModel)]="studentData.academicLevel">
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group left-aligned">
+                <label>رقم أمر المنحة</label>
+                <input type="text" class="form-control" [(ngModel)]="studentData.grantOrderNumber">
+            </div>
+            <div class="form-group right-aligned">
+                <label>تاريخ شهادة الثانوية العامة</label>
+                <div class="date-input">
+                    <input type="date" class="form-control" [(ngModel)]="studentData.highSchoolGraduationDate">
+                </div>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group left-aligned">
+                <label>معدل المنحة</label>
+                <input type="text" class="form-control" [(ngModel)]="studentData.grantRate">
+            </div>
+            <div class="form-group right-aligned">
+                <label>تاريخ المنحة</label>
+                <div class="date-input">
+                    <input type="date" class="form-control" [(ngModel)]="studentData.grantDate">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+<!-- Training & Professional Development Section -->
+<div class="training-section">
+    <div class="section-header">الدورات والتدريب المهني</div>
+
+    <div class="action-buttons">
+        <button class="btn add-btn"><span class="icon">➕</span> إضافة جديد</button>
+        <button class="btn delete-btn"><span class="icon">🗑️</span> حذف</button>
+        <button class="btn update-btn"><span class="icon">🔄</span> تحديث</button>
+    </div>
+
+    <table class="training-table">
+        <thead>
+            <tr>
+                <th class="right-aligned">المجال</th>
+                <th class="right-aligned">الجهة</th>
+                <th class="right-aligned">المكان</th>
+                <th class="right-aligned">التاريخ</th>
+                <th class="right-aligned">المرفق</th>
+                <th class="actions-column"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="actions-cell">
+                    <button class="action-btn delete-row-btn">❌</button>
+                    <button class="action-btn edit-row-btn">✏️</button>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="actions-cell">
+                    <button class="action-btn delete-row-btn">❌</button>
+                    <button class="action-btn edit-row-btn">✏️</button>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="actions-cell">
+                    <button class="action-btn delete-row-btn">❌</button>
+                    <button class="action-btn edit-row-btn">✏️</button>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="actions-cell">
+                    <button class="action-btn delete-row-btn">❌</button>
+                    <button class="action-btn edit-row-btn">✏️</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="form-actions">
+    <button class="btn save-btn">تحديث</button>
+</div>
+</div>

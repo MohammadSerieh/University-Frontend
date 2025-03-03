@@ -1,0 +1,165 @@
+/* Main Container */
+.container {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+/* Form Styles */
+.form-row {
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.left-aligned {
+    text-align: right;
+}
+
+.right-aligned {
+    text-align: right;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-control {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+select.form-control {
+    background-color: #e8e8e8;
+}
+
+/* Date Input */
+.date-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.calendar-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Training Section */
+.training-section {
+    margin-top: 20px;
+}
+
+.section-header {
+    background-color: #2d3748;
+    color: white;
+    padding: 10px;
+    text-align: right;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.add-btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.update-btn {
+    background-color: #2196f3;
+    color: white;
+}
+
+.save-btn {
+    background-color: #f0ad4e;
+    color: white;
+    padding: 8px 20px;
+    font-weight: bold;
+}
+
+/* Table Styles */
+.training-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.training-table th,
+.training-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: right;
+}
+
+.training-table thead {
+    background-color: #f2f2f2;
+}
+
+.training-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.actions-column {
+    width: 80px;
+}
+
+.actions-cell {
+    display: flex;
+    justify-content: space-between;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.delete-row-btn {
+    color: red;
+}
+
+.edit-row-btn {
+    color: orange;
+}
+
+/* Form Actions */
+.form-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
