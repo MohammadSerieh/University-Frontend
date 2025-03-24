@@ -1,4 +1,4 @@
-/* Main Container */
+
 .container {
     font-family: Arial, sans-serif;
     direction: rtl;
@@ -6,9 +6,10 @@
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
+    background-color: #f4f2eb;
 }
 
-/* Form Styles */
+
 .form-row {
     display: flex;
     margin-bottom: 15px;
@@ -44,7 +45,7 @@ select.form-control {
     background-color: #e8e8e8;
 }
 
-/* Date Input */
+
 .date-input {
     position: relative;
     display: flex;
@@ -58,7 +59,7 @@ select.form-control {
     transform: translateY(-50%);
 }
 
-/* Training Section */
+
 .training-section {
     margin-top: 20px;
 }
@@ -90,17 +91,17 @@ select.form-control {
 }
 
 .add-btn {
-    background-color: #4caf50;
+    background-color: #88de8b;
     color: white;
 }
 
 .delete-btn {
-    background-color: #f44336;
+    background-color: #e85045;
     color: white;
 }
 
 .update-btn {
-    background-color: #2196f3;
+    background-color: #5babec;
     color: white;
 }
 
@@ -111,7 +112,7 @@ select.form-control {
     font-weight: bold;
 }
 
-/* Table Styles */
+
 .training-table {
     width: 100%;
     border-collapse: collapse;
@@ -157,7 +158,7 @@ select.form-control {
     color: orange;
 }
 
-/* Form Actions */
+
 .form-actions {
     display: flex;
     justify-content: center;
